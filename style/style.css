@@ -1,0 +1,231 @@
+* {
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    border-bottom: 2px solid black;
+    font-weight: normal;
+}
+
+.text-underline {
+    border-bottom: 2px solid black;
+}
+
+/*************** Header *****************/
+h1 {
+    font-size: 5vw;
+    margin: 0%;
+}
+
+h2 {
+    font-size: 4vw;
+    margin: 0%;
+}
+
+h3 {
+    font-size: 3.5vw;
+    margin: 0%;
+}
+
+h4 {
+    font-size: 3vw;
+    margin: 0%;
+}
+
+h5 {
+    font-size: 2.5vw;
+    margin: 0%;
+}
+
+h6 {
+    font-size: 2vw;
+    margin: 0%;
+}
+
+/*************** Title *****************/
+.title-1 {
+    font-size: 5vw;
+}
+
+.title-2 {
+    font-size: 4vw;
+}
+
+.title-3 {
+    font-size: 3.5vw;
+}
+
+.title-4 {
+    font-size: 3vw;
+}
+
+.title-5 {
+    font-size: 2.5vw;
+}
+
+.title-6 {
+    font-size: 2vw;
+}
+
+/*************** Font Size *****************/
+.fs-sml {
+    font-size: smaller;
+}
+
+.fs-sm {
+    font-size: small;
+}
+
+.fs-m {
+    font-size: medium;
+}
+
+.fs-lg {
+    font-size: large;
+}
+
+.fs-lgr {
+    font-size: larger;
+}
+
+.fs-xlg {
+    font-size: x-large;
+}
+
+.fs-xxlg {
+    font-size: xx-large;
+}
+
+
+/*************** Main Header *****************/
+img.logo {
+    width: 10%;
+    border-radius: 50%;
+}
+
+div.main-header {
+    margin-top: 2%;
+    text-align: center;
+}
+
+/*************** Navbar *****************/
+div.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+div.navbar>ul {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+div.navbar>ul>li {
+    padding: 1rem;
+    font-size: x-large;
+    text-align: center;
+}
+
+a.navbar-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+a.navbar-link:hover {
+    border-bottom: none;
+    font-weight: 800;
+    color: grey;
+}
+
+a.navbar-link.active{
+    text-decoration: none;
+    border-bottom: 3px solid black;
+    color: black;
+    font-weight: 900;
+    pointer-events: none;
+}
+
+a.navbar-link.active:hover{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+/*************** Main *****************/
+div.main {
+    margin: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+
+/*************** Products *****************/
+div.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+div.product{
+    width: 25%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    div.product {
+        height: 150px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    div.product {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1919px) {
+    div.product {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1920) {
+    div.product {
+        height: 1050px;
+    }
+}
+
+div.product-image>img{
+    max-width: 100%;
+    max-height: 100%;
+}
+div.product-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+div.product-price{
+    text-align: center;
+    font-size: 1.25rem;
+}
